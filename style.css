@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Warna krim */
+}
+
+nav {
+    background-color: #8B4513; /* Warna coklat */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero-image {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.hero-text {
+    max-width: 400px;
+}
+
+.menu {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: #8B4513; /* Warna coklat */
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin: 0 0 20px 0;
+    }
+}
